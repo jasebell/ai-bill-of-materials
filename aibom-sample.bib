@@ -1,0 +1,52 @@
+@ai_system{gpt4_openai,
+    title = {GPT-4 by OpenAI},
+
+    % Hardware Information
+    hardware = {
+        training = {TPU_v4, Nvidia_A100}, % List of hardware used for training
+        inference = {TPU_v3, Nvidia_T4}   % List of hardware used for inference
+    },
+
+    % Programming Language Information
+    languages = {
+        training = {Python},
+        inference = {Python, C++, Rust}
+    },
+
+    % Source Data
+    data_source = {
+        training = {WebText, Books, Journals, SyntheticDataset}, % List or description of datasets
+        validation = {CustomTestSet},                           % Validation datasets
+        synthetic_data = {                                      % Details on synthetic data
+            used = true,
+            type = {GANs, Simulations},
+            percentage = 10,                                   % Percentage of synthetic data in the training dataset
+            notes = {Synthetic data was generated using a combination of GANs and simulation tools.}
+        },
+        notes = {Some datasets were cleaned and processed before use.}
+    },
+
+    % Library Versions
+    libraries = {
+        tensorflow = {version = 2.5, link = {https://www.tensorflow.org/}},
+        pytorch = {version = 1.8, link = {https://www.pytorch.org/}}
+    },
+
+    % Accuracy Information
+    performance = {
+        R2 = 0.95,      % R^2 Score
+        F1 = 0.92,      % F1 Score
+        MAE = 2.5,      % Mean Absolute Error, for example
+        notes = {Performance on validation dataset.}
+    },
+
+    % Training History
+    training_history = {
+        {date = {2023-01-01}, notes = {Initial training.}},
+        {date = {2023-06-01}, notes = {Retrained with additional data.}},
+        {date = {2023-09-15}, notes = {Fine-tuning for specific task.}}
+    },
+
+    % Additional Notes
+    note = {Training took approximately 2 months with a distributed setup.}
+}
