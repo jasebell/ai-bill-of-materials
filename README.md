@@ -1,7 +1,7 @@
 # AI Bill of Materials (BoM) Schema
 
 ## Introduction
-Born from a conversation with (James Governor)[https://twitter.com/monkchips] at (Redmonk)[https://www.redmonk.com], we discussed the potential of having a document to outline what's inside any given model. I'd personally noticed differences in accuracy scores from using different programming languages (R, Java and Python) with even the most traditional algorithms like Decision Trees, Multiple Linear Regression and Support Vector Machines. 
+Born from a conversation with [James Governor](https://twitter.com/monkchips) at [Redmonk](https://www.redmonk.com), we discussed the potential of having a document to outline what's inside any given model. I'd personally noticed differences in accuracy scores from using different programming languages (R, Java and Python) with even the most traditional algorithms like Decision Trees, Multiple Linear Regression and Support Vector Machines. 
 
 I settled on a Bibtex like structure for this proof of concept bill of materials (BOM) for any AI or Machine Learning model. The aim for it to be easily read by machine or human. 
 
